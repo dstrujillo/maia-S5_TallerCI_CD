@@ -14,6 +14,7 @@ from app.config import settings
 
 api_router = APIRouter()
 
+# Un comentario para pushear
 # Ruta para verificar que la API se esté ejecutando correctamente
 @api_router.get("/health", response_model=schemas.Health, status_code=200)
 def health() -> dict:
